@@ -6,14 +6,9 @@ import Rocket from "@/assets/Icons/Rocket";
 import Logo from "@/assets/Icons/Logo";
 import { Box } from "@/components/ui/box";
 import { ScrollView, View } from "react-native";
-import { Text } from "@/components/ui/text";
 
-import { Link, Redirect } from "expo-router";
+import LoginForm from "@/components/LoginForm";
 
 export default function Home() {
-  return (
-    <View>
-      <Redirect href={"/(tabs)"} />
-    </View>
-  );
+  return <LoginForm />;
 }
