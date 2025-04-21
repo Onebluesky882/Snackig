@@ -1,5 +1,5 @@
 import { MaterialIcons } from "@expo/vector-icons";
-import { Stack, Tabs } from "expo-router";
+import { Tabs } from "expo-router";
 
 function TabBarIcon(props: {
   name: React.ComponentProps<typeof MaterialIcons>["name"];
@@ -10,24 +10,24 @@ function TabBarIcon(props: {
 
 export default function Layout() {
   return (
-    <Tabs screenOptions={{}}>
+    <Tabs>
       <Tabs.Screen
         name="index"
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name={"home"} color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
         }}
       />
       <Tabs.Screen
         name="activity"
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name={"bolt"} color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="bolt" color={color} />,
         }}
       />
       <Tabs.Screen
         name="board"
         options={{
           tabBarIcon: ({ color }) => (
-            <TabBarIcon name={"campaign"} color={color} />
+            <TabBarIcon name="campaign" color={color} />
           ),
         }}
       />
@@ -35,23 +35,21 @@ export default function Layout() {
         name="notification"
         options={{
           tabBarIcon: ({ color }) => (
-            <TabBarIcon name={"notifications-active"} color={color} />
+            <TabBarIcon name="notifications-active" color={color} />
           ),
         }}
       />
       <Tabs.Screen
         name="chat"
         options={{
-          tabBarIcon: ({ color }) => (
-            <TabBarIcon name={"wechat"} color={color} />
-          ),
+          tabBarIcon: ({ color }) => <TabBarIcon name="wechat" color={color} />,
         }}
-      />{" "}
+      />
       <Tabs.Screen
         name="profile"
         options={{
           tabBarIcon: ({ color }) => (
-            <TabBarIcon name={"verified-user"} color={color} />
+            <TabBarIcon name="verified-user" color={color} />
           ),
         }}
       />
