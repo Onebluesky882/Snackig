@@ -2,6 +2,7 @@ import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import {} from "./ui/form-control";
 import { useState } from "react";
 import { Link } from "expo-router";
+import { emoji, EmojiAnimation } from "@/assets/animation/emoji";
 
 const LoginForm = () => {
   const [error, setError] = useState("");
@@ -16,8 +17,9 @@ const LoginForm = () => {
     }
   };
   return (
-    <View className="flex-1 items-center justify-center bg-white px-4">
-      <View className="w-full max-w-sm p-6 bg-white rounded-lg shadow">
+    <View className="flex-1 items-center justify-center bg-white px-4 ">
+      <EmojiAnimation uri={emoji.smile} />
+      <View className="w-full max-w-sm p-6 bg-white rounded-lg border border-gray-200 shadow-xs">
         <Text className="text-2xl font-semibold text-gray-800">Welcome</Text>
         <Text className="mt-1 text-sm text-gray-600">Sign in to continue!</Text>
 
