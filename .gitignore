@@ -1,0 +1,96 @@
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Native folders
+ios/
+android/
+
+# Expo native generated
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+pnpm-debug.*
+bun.lockb
+
+# macOS
+.DS_Store
+
+# env
+.env
+.env.*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+
+# logs
+logs
+*.log
+
+# coverage
+coverage/
+
+# IDE
+.vscode/
+.idea/
+
+# temp
+tmp/
+temp/
+
+# Expo Router types
+expo-env.d.ts
+
+# Nitro
+nitrogen/generated/
+nitro/generated/
+
+# build outputs
+lib/
+build/
+
+# sqlite
+*.db
+*.sqlite
+*.sqlite3
+
+# cache
+.cache/
+
+# React Native
+react-native.config.js.lock
+
+# Xcode
+xcuserdata/
+*.xcworkspace
+DerivedData/
+
+# Android
+.gradle/
+local.properties
+*.keystore
+
+# Turbo
+.turbo/
+
+# testing
+jest-cache/
+
+# misc
+*.swp
+*.swo
