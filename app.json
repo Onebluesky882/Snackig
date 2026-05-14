@@ -8,7 +8,8 @@
     "scheme": "snackig",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.wansing05.Snackig"
     },
     "android": {
       "adaptiveIcon": {
