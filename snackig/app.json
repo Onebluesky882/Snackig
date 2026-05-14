@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Snackig",
-    "slug": "Snackig",
+    "name": "snackig",
+    "slug": "snackig",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -9,7 +9,7 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon",
-      "bundleIdentifier": "com.wansing05.Snackig"
+      "bundleIdentifier": "com.wansing05.snackig"
     },
     "android": {
       "adaptiveIcon": {
