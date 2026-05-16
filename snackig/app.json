@@ -9,7 +9,12 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon",
-      "bundleIdentifier": "com.wansing05.snackig"
+      "bundleIdentifier": "com.wansing05.snackig",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow access to your photos to upload workout images.",
+        "NSCameraUsageDescription": "Allow camera access to take workout photos.",
+        "NSPhotoLibraryAddUsageDescription": "Allow saving images to your photo library."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -18,7 +23,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.wansing05.snackig"
     },
     "web": {
       "output": "static",
@@ -35,7 +41,8 @@
             "imageWidth": 76
           }
         }
-      ]
+      ],
+      "expo-status-bar"
     ],
     "experiments": {
       "typedRoutes": true,
