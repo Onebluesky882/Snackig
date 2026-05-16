@@ -2,7 +2,7 @@
 
 import { useTheme } from "@/hooks/use-theme";
 import { Tabs } from "expo-router";
-import { House, MessageCircle, Trophy, User, Users } from "lucide-react-native";
+import { House, MessageCircle, Plus, Trophy, Users } from "lucide-react-native";
 
 import { Pressable, useWindowDimensions, View } from "react-native";
 
@@ -114,7 +114,7 @@ function FloatingTabBar({ state, descriptors, navigation }: BottomTabBarProps) {
         });
 
         // CENTER BUTTON
-        if (route.name === "mygoal/index") {
+        if (route.name === "workout/index") {
           return (
             <Pressable
               key={route.key}
@@ -233,9 +233,9 @@ export default function TabLayout() {
         />
 
         <Tabs.Screen
-          name="mygoal"
+          name="workout"
           options={{
-            tabBarIcon: () => <User size={24} color="#000" strokeWidth={2.5} />,
+            tabBarIcon: () => <Plus size={24} color="#000" strokeWidth={2.5} />,
           }}
         />
 
