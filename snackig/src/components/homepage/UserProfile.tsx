@@ -19,9 +19,9 @@ export const UserProfile = ({ newPost, newPostImage }: Props) => {
             className="w-12 h-12 rounded-full border-2 border-primary"
           />
           <ThemedView className="ml-3">
-            <ThemedText onPress={newPost}>
-              Share your workout activity
-            </ThemedText>
+            <Pressable onPress={newPost}>
+              <ThemedText>Share your workout activity</ThemedText>
+            </Pressable>
           </ThemedView>
         </View>
         <Pressable

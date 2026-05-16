@@ -1,10 +1,6 @@
-import {
-  FriendStories,
-  LocalFeed,
-  LocalPules,
-  MenuPage,
-  UserProfile,
-} from "@/components/homepage";
+import { FriendStories, MenuPage, UserProfile } from "@/components/homepage";
+import SocialFeed from "@/components/homepage/SocialFeed";
+import TrendingSports from "@/components/homepage/TrendingSports";
 import { ThemedView } from "@/components/themed-view";
 import { usePostImage } from "@/hooks/post/use-post-image";
 import { useTheme } from "@/hooks/use-theme";
@@ -45,10 +41,15 @@ const Index = () => {
           />
           {/* --- Section 2: Stories (Short Activity Clips) --- */}
           <FriendStories />
-          {/* --- Section 3: Local Pulse (Community Activity) --- */}
-          <LocalPules />
-          {/* --- Section 4: Local Feed (Posts & Updates) --- */}
-          <LocalFeed />
+          {/* --- Section 3: Trending Sports --- */}
+          <TrendingSports />
+
+          <SocialFeed />
+          {/* --- will remove --- */}
+          {/* --- Section 4: Local Pulse (Community Activity) --- */}
+          {/* <LocalPules /> */}
+          {/* --- Section 5: Local Feed (Posts & Updates) --- */}
+          {/* <LocalFeed /> */}
         </ThemedView>
       </ScrollView>
     </SafeAreaView>

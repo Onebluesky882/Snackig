@@ -15,6 +15,9 @@ export const Colors = {
     backgroundSelected: "#E0E1E6",
     textSecondary: "#60646C",
     icon: "#000000",
+    greenSport: "#B6FF00",
+    menuBackground: "#22272E",
+    menuIcon: "#818691",
   },
   dark: {
     text: "#ffffff",
@@ -22,7 +25,10 @@ export const Colors = {
     backgroundElement: "#212225",
     backgroundSelected: "#2E3135",
     textSecondary: "#B0B4BA",
-    icon: "#2A7FFF",
+    icon: "#CEFF00",
+    greenSport: "#B6FF00",
+    menuBackground: "#1D2227",
+    menuIcon: "#AAB2BF",
   },
 } as const;
 
